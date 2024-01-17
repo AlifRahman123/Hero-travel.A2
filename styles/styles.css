@@ -11,28 +11,38 @@
     margin-left: 80px;
     margin-right: 80px;
 }
-@media screen and (max-width: 600px) {
-    .head-part{
-        margin-inline: 0px;
+.hamburger-button{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .head-part {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
-    .nav-title{
+    .head-part .nav-title{
         display: none;
     }
-}
+    .head-part .nav-title img{
+        width: 20px;
+    }
+    .hamburger-button{
+        display: inline;
+        width: max-content;
+        margin-right: 4px;
+    }
+    .hamburger-button img{
+        width: 40px;
+    }
+  }
 
 .top-part{
     display: flex;
     color: #131318;
 font-size: 26px;
 font-weight: 800;
-}
-@media screen and (max-width: 600px) {
-    .head-part{
-        margin-inline: 0px;
-    }
-    .nav-title{
-        display: none;
-    }
 }
 
 .logo{
@@ -72,18 +82,42 @@ span{
     padding-bottom: 100px;
     border-radius: 16px;
     padding-top: 40px;
-    
 }
+@media only screen and (max-width: 600px){
+
+    .intro{
+        text-align: center;
+    background-image: url(/Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 100px;
+    border-radius: 16px;
+    padding-top: 40px;
+}
+}
+
 .explore{
     color: #FFF;
-
-font-family: Mulish;
 font-size: 64px;
 font-style: normal;
 font-weight: 800;
 line-height: normal;
+margin-bottom: 20px;
+margin-top: 0px;
 
 }
+@media only screen and (max-width: 600px)
+{.input-all{
+    display: flex;
+    flex-direction: column;
+    margin-left: 210px; 
+} 
+.where, .when, .select, .find{
+    margin-bottom: 10px;
+}
+}
+
 .intro-text{
     color: #FFF;
 text-align: center;
@@ -138,19 +172,32 @@ border: none;
     margin-right: 80px;
 
  }
- @media screen and (max-width: 600px) {
+ .popular-tour-image{
+    padding-left: 50px;
+}
+ @media only screen and (max-width: 600px){
     .popular-tour-container{
-        margin-inline: 0px;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-left: 0px;
+    margin-right: 0px;
+        
+        
+
     }
-    
+    .popular-tour-image{
+        padding-left: 0;
+        text-align: center;
     }
+ }
+
+
 .popular-tour{
     color: rgba(19, 19, 24, 0.70);
     font-size: 20px;
     font-weight: 400;
     width: 577px;
 }
+
 .head{
     color: #131318;
 
@@ -165,9 +212,7 @@ text-align: left;
 .tour-details{
     padding-right: 50px;
 }
-.popular-tour-image{
-    padding-left: 50px;
-}
+
 .read-btn{
     width: 174px;
 height: 52px;
@@ -205,6 +250,16 @@ line-height: 26px;
     text-align: center;
     padding-top: 48px;
 }
+@media only screen and (max-width: 600px){
+    .nature{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+        width: 100%;
+        margin: 0px;
+
+    }
+}
 .why-choose-us{
     padding-top: 80px;
 }
@@ -216,6 +271,7 @@ width: 573px;
 height: 284px;
 padding-top: 100px;
 }
+
 .service{
     border-radius: 16px;
 border: 1px solid rgba(41, 206, 246, 0.20);
@@ -243,6 +299,14 @@ padding-top: 100px;
     padding-top: 50px;
 
 } 
+@media only screen and (max-width: 600px){
+    .our-facilities{
+        margin-left: 0;
+        margin-right: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
 .contact-us{
     display: flex;
     margin-left: 80px;
@@ -251,10 +315,25 @@ padding-top: 100px;
     padding-top: 100px;
 }
 
+@media only screen and (max-width: 600px){
+    .contact-us{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0px;
+    margin-right: 0px;
+
+    }
+}
 .news-letter{
     border-radius: 16px;
 border: 1px solid #FF5400;
 
+}
+@media only screen and (max-width: 600px){
+    .news-letter{
+        padding-bottom: 50%;
+    }
 }
 .news{
     padding-left: 20px;
@@ -275,6 +354,12 @@ padding-left: 20px;
 height: 52px;
 flex-shrink: 0;
 border-radius: 8px;
+}
+@media only screen and (max-width: 600px){
+    .contact-image > img{
+        
+        width: 100%;
+    }
 }
 .subscribe-btn{
     width: 393px;
@@ -322,6 +407,7 @@ margin-block: 10px;
     margin-top: 100px;
     
 }
+
 .closing-info{
     text-align: center;
 }
@@ -330,18 +416,20 @@ margin-block: 10px;
     padding-bottom: 30px;
     padding-top: 30px;
 }
-@media screen and (max-width:600px){
-    .head-part{
-        flex-direction: column;
-    }
-    
-}
+
 .social-icon{
     padding-left: 620px;
     width: 100px;
     padding-bottom: 30px;
     padding-top: 30px;
 }
+@media only screen and (max-width: 600px){
+    .social-icon{
+        padding-left: 40%;
+    }
+}
+
+
 
     
     
