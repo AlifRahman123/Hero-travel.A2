@@ -26,6 +26,14 @@
 font-size: 26px;
 font-weight: 800;
 }
+@media screen and (max-width: 600px) {
+    .head-part{
+        margin-inline: 0px;
+    }
+    .nav-title{
+        display: none;
+    }
+}
 
 .logo{
     width: 48px;
@@ -319,6 +327,8 @@ margin-block: 10px;
 }
 .rights{
     text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 @media screen and (max-width:600px){
     .head-part{
@@ -326,7 +336,12 @@ margin-block: 10px;
     }
     
 }
-    
+.social-icon{
+    padding-left: 620px;
+    width: 100px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
 
     
     
